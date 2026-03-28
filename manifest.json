@@ -1,0 +1,25 @@
+{
+  "name": "진아 스케줄러",
+  "short_name": "진아 스케줄러",
+  "description": "진아의 스케줄·미션·논문 플래너",
+  "start_url": "./scheduler.html",
+  "display": "standalone",
+  "background_color": "#c878f0",
+  "theme_color": "#c878f0",
+  "orientation": "any",
+  "lang": "ko",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

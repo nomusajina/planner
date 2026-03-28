@@ -1,6 +1,6 @@
-const CACHE = 'planner-v1';
+const CACHE = 'planner-v2';
 const ASSETS = [
-  './scheduler.html',
+  './index.html',
   './manifest.json',
   'https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap'
 ];
@@ -28,7 +28,7 @@ self.addEventListener('fetch', e => {
         const clone = res.clone();
         caches.open(CACHE).then(c => c.put(e.request, clone));
         return res;
-      }).catch(() => caches.match('./scheduler.html'));
+      }).catch(() => caches.match('./index.html'));
     })
   );
 });

@@ -32,20 +32,20 @@ button,input,select,textarea{font-family:inherit;font-size:14px}
 button{cursor:pointer;border:none;background:none;color:var(--text)}
 
 /* ── Topbar ── */
-.topbar{flex-shrink:0;background:rgba(245,246,248,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 22px;display:flex;align-items:center;gap:0;z-index:100}
-.brand{display:flex;align-items:baseline;gap:10px;padding:13px 16px 13px 0;border-right:1px solid var(--border);margin-right:4px;flex-shrink:0}
-.brand-name{font-size:15px;font-weight:700;letter-spacing:-.3px}
+.topbar{flex-shrink:0;background:rgba(245,246,248,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 16px;display:flex;align-items:center;gap:0;z-index:100;overflow:hidden}
+.brand{display:flex;align-items:baseline;gap:8px;padding:12px 12px 12px 0;border-right:1px solid var(--border);margin-right:4px;flex-shrink:0}
+.brand-name{font-size:13px;font-weight:700;letter-spacing:-.2px}
 .brand-date{font-size:11px;color:var(--text3);font-family:'DM Mono',monospace}
-.tabs{display:flex;align-items:stretch;gap:0}
-.tab{padding:0 16px;height:50px;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:500;color:var(--text2);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap;margin-bottom:-1px}
+.tabs{display:flex;align-items:stretch;gap:0;overflow-x:auto;flex:1;scrollbar-width:none}
+.tab{padding:0 11px;height:50px;display:flex;align-items:center;gap:5px;font-size:12px;font-weight:500;color:var(--text2);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap;margin-bottom:-1px}
 .tab:hover{color:var(--text)}
 .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
 .tab-badge{background:var(--danger);color:#fff;border-radius:99px;font-size:10px;font-weight:700;padding:1px 5px;min-width:16px;text-align:center}
 .tab-badge.w{background:var(--warn);color:#1a0e00}
-.topbar-actions{margin-left:auto;display:flex;align-items:center;gap:6px;padding-left:12px}
-.btn-add{background:var(--accent);color:#fff;border-radius:var(--rxs);padding:7px 13px;font-weight:700;font-size:13px;transition:opacity .15s;white-space:nowrap}
+.topbar-actions{flex-shrink:0;display:flex;align-items:center;gap:5px;padding-left:8px}
+.btn-add{background:var(--accent);color:#fff;border-radius:var(--rxs);padding:6px 10px;font-weight:700;font-size:12px;transition:opacity .15s;white-space:nowrap}
 .btn-add:hover{opacity:.85}
-.btn-ghost{background:var(--bg3);color:var(--text2);border-radius:var(--rxs);padding:7px 13px;font-size:13px;border:1px solid var(--border2);transition:all .15s;white-space:nowrap}
+.btn-ghost{background:var(--bg3);color:var(--text2);border-radius:var(--rxs);padding:6px 10px;font-size:12px;border:1px solid var(--border2);transition:all .15s;white-space:nowrap}
 .btn-ghost:hover{color:var(--text);border-color:var(--border3)}
 
 /* ── App body ── */
@@ -308,9 +308,9 @@ button{cursor:pointer;border:none;background:none;color:var(--text)}
     <div class="tab" onclick="goTo('income',this)" id="tab-income">💰 수입 관리</div>
   </div>
   <div class="topbar-actions">
-    <button class="btn-ghost" onclick="openMissionModal(null)">＋ 미션</button>
-    <button class="btn-ghost" onclick="openPaperModal()">＋ 논문</button>
-    <button class="btn-add" onclick="openSchedModal()">＋ 스케줄</button>
+    <button class="btn-ghost" onclick="openMissionModal(null)">＋미션</button>
+    <button class="btn-ghost" onclick="openPaperModal()">＋논문</button>
+    <button class="btn-add" onclick="openSchedModal()">＋프로젝트</button>
   </div>
 </div>
 
